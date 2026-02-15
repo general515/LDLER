@@ -31,8 +31,11 @@ We do not provide FER datasets in our repository. Please download the datasets y
 ## Training
 
 Because it need to load the train samples with three times for each epoch, we provide two approaches to implement.
+
 (1) data_one.py and train_one_loader.py: only using one train_loader to load all samples, and without drop_last.
+
 (2) data_three.py and train_three_loaders.py: Using three train_loaders to load partial samples, and the drop_last must be true.
+
 We recommend using scheme 1 to train on RAF-DB and FERPlus, and method 2 to train on AffectNet.
 ## Results
 
